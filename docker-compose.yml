@@ -5,6 +5,8 @@ services:
         build:
             context: .
         env_file: .env
+        volumes:
+            - ./assets/fonts:/app/assets/fonts
         restart: always
         logging:
             driver: "json-file"
